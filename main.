@@ -1,0 +1,15 @@
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the number to which you want to trail the zeros: ");
+		int n = scan.nextInt();
+		int powerOf5 = 5;
+		int count = 0;
+		
+	     while(n>=powerOf5) {
+	    	 count = count + n/powerOf5;
+	    	 powerOf5 = powerOf5 * 5;
+	     }
+	     System.out.println(count);
+	     scan.close();
+	}
